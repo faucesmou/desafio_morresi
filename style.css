@@ -1,0 +1,159 @@
+* {
+    margin: 5px;
+    padding: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,600&display=swap');
+
+@media screen and (max-width: 320px) {
+    
+}
+
+.headerindex{
+    display: flex; /* propiedad que permite aplicar flexbox sobre contenedor padre*/
+    flex-direction: row; /*elegimos orientación sobre eje X o Y -*/	
+    flex-wrap: wrap; /* obligamos o no (a los items hijos), a adaptarse al ancho del contendor padre */
+    justify-content: space-between;
+} 
+.navindex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ulindex {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end; /*organizar los elementos:  center, flex-start, flex-end, space-around, space-between, spave-evenly */
+} 
+
+.li {
+    display: inline-flex; /* cómo hacer para que queden todos en la misma línea? y no pase abajo "colecciones" lo intenté inicialmente 
+    con navindex usando flex pero no encuentro cómo*/
+    flex-wrap: nowrap;
+}
+
+.div1index {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.section1index {
+    background-color: rgb(14, 121, 67);
+    display: flex;
+    justify-content: center;
+}
+
+.olindex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto1 {
+    grid-area: producto1;
+    max-width: 100%;
+    max-height: 100%;
+}
+.producto2 {
+    grid-area: producto2;
+    max-width: 100%;
+    max-height: 100%;
+}
+.producto3 {
+    grid-area: producto3;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.producto4 {
+    grid-area: producto4;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carrusel {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas: "producto1 producto2"
+    "producto3 producto4";
+    justify-items: stretch;
+    align-items: stretch;
+}
+.articleindex {
+    display: flex;
+    flex-direction: column;
+}
+
+.construyendosentido, .frase2, .parrafohistoria, .boxModel, .publicidad {
+    display: flex;
+    justify-content: center;
+}
+
+.nuestraCom {
+    grid-area: nuestraCom;
+}
+.mediosDePago {
+    grid-area: mediosdepago;
+}
+.beneficios {
+    grid-area: beneficios;
+}
+.contacto {
+    grid-area: contacto;
+}
+.envios {
+    grid-area: envios;
+}
+.nuestrosLocales {
+    grid-area: nuestroslocales;
+}
+
+.footerindex {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+    ". nuestraCom mediosdepago beneficios ."
+    ". contacto envios . ."
+    ". nuestroslocales . . . ";
+}
+
+/* Encontré este ejemplo en la carpeta de la clase 8 pero tampoco lo soluciona:
+.navindex {list-style-type: none;
+    padding: 20px;font-size: 20px; background-color: yellow;}
+    .ulindex li a {text-decoration: none;}
+    .linav1{order: 5;}
+    .linav2{order: -1;}
+    .linav3{order: -2;}
+    .linav4{order: 0;}
+    
+    ajustar imágenes al contenendor ponele whitd 100% a img y después juga con el div 
+    ponle dentro de un div y a la imagen le pones un porcentaje
+la imagen va a ser por ejemplo siempre el 90 % del contenedor
+
+
+
+ utilización de git
+ git init crear el repositorio,
+ luego entrar al repositorio, 
+creamos los archivos, modificamos lo que sea, 
+los añadimos a la zoana de almacenamiento con git add,
+una vez añadidos hacemos el commit agregando el comentario,  
+y finalmente usamos el push para subirlo a github, para eso hay que logearse.
+
+
+.imagen-1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-items: auto;
+
+
+*/
